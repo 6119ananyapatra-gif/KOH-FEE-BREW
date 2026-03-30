@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KOH‑FEE‑BREW – Table Order</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light">
+  <section id="table-modal" class="modal active">
+    <h1>Welcome to KOH‑FEE‑BREW</h1>
+    <p>Please enter your table number</p>
+    <input type="number" id="table-input" min="1" max="99" placeholder="e.g. 12">
+    <button id="table-submit">Continue</button>
+  </section>
+
+  <main id="app" class="hidden">
+    <header>
+      <h1>KOH‑FEE‑BREW Menu</h1>
+      <button id="cart-toggle" class="cart-btn">🛒 <span id="cart-count">0</span></button>
+    </header>
+
+    <section id="menu"></section>
+
+    <aside id="cart-drawer" class="hidden">
+      <h2>Your Order</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: <strong id="cart-total">₹0</strong></p>
+      <button id="checkout-btn">Proceed to Checkout</button>
+    </aside>
+  </main>
+
+  <script src="menu-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
